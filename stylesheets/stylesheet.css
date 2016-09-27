@@ -4,20 +4,76 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; 
+  color: #606c71;
   background-image: linear-gradient(180deg, #3FD5C8, #BB26FA);
 }
 
 .main-content {
   overflow: auto;
+  text-align: center;
+}
+
+.amoeba-screenshots {
+  position: relative;
+  height: 400px;
+  width: 50%;
+  float: right;
+}
+
+.amoeba-screenshots .iphone {
+  position: absolute;
+  width: 160px;
+  right: 0;
+  top: 100px;
+}
+
+.amoeba-screenshots .ipad {
+  position: absolute;
+  right: 100px;
+  width: 320px;
+}
+
+.amoeba-screenshots .iphone-screenshot {
+  position: absolute;
+  width: 136px;
+  right: 12px;
+  top: 137px;
+}
+
+.amoeba-screenshots .ipad-screenshot {
+  position: absolute;
+  right: 135px;
+  width: 250px;
+  top: 37px;
 }
 
 .amoeba-description-container {
-  float: right;
-  width: 160px;
+  float: left;
+  width: 40%;
+}
+
+.amoeba-description {
+  color: #fff;
+  padding: 10px;
+}
+
+.button-cta-wrapper {
+  /*text-align: center;*/
+}
+
+.button-cta {
+  width: 50%;
+  padding: 10px 0;
+  text-align: center;
+  background-image: linear-gradient(180deg, #8add6d, #60b044);
+  border: 2px solid #60b044;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+  color: #fff;
 }
 
 a {
@@ -44,6 +100,32 @@ a {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
+
+.social-media-icon {
+  width: 50px;
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  margin: 5px;
+}
+
+.footer-share {
+  text-align: center;
+}
+
+.social-share-list {
+  text-align: center;
+  display: inline-block;
+  overflow: auto;
+}
 
 @media screen and (min-width: 64em) {
   .btn {
@@ -75,11 +157,66 @@ a {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
-    padding: 40rem 15rem; } }
+    padding: 40px 15px; }
+
+    .amoeba-screenshots {
+      display: inline-block;
+      position: relative;
+      float: none;
+      width: 400px;
+    }
+
+    .amoeba-description-container {
+      display: inline-block;
+      float: none;
+      width: 100%;
+    }
+
+    .amoeba-screenshots .iphone {
+      right: 0;
+    }
+
+    /*.amoeba-description-container {
+      float: none;
+    }*/
+
+    .amoeba-description-container {
+      margin-top: 20px;
+    }
+  }
 
 @media screen and (max-width: 42em) {
   .page-header {
-    padding: 30rem 10rem; } }
+    padding: 30px 10px; }
+
+    .amoeba-screenshots, .amoeba-description-container {
+      display: inline-block;
+      position: relative;
+      float: none;
+      width: 360px;
+    }
+
+    .amoeba-screenshots .iphone {
+      right: -17px;
+    }
+
+    .amoeba-screenshots .iphone-screenshot {
+      right: -5px;
+    }
+
+    .amoeba-screenshots .ipad {
+      right: 55px;
+    }
+
+    .amoeba-screenshots .ipad-screenshot {
+      right: 90px;
+    }
+
+  .amoeba-description-container {
+    margin-top: 20px;
+  }
+
+  }
 
 .project-name {
   margin-top: 0;
@@ -116,8 +253,8 @@ a {
 
 .main-content :first-child {
   margin-top: 0; }
-.main-content img {
-  max-width: 100%; }
+/*.main-content img {
+  max-width: 100%; }*/
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
