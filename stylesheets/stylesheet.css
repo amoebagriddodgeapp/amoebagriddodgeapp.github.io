@@ -66,11 +66,11 @@ a {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
-    padding: 3rem 4rem; } }
+    padding: 40rem 15rem; } }
 
 @media screen and (max-width: 42em) {
   .page-header {
-    padding: 2rem 1rem; } }
+    padding: 30rem 10rem; } }
 
 .project-name {
   margin-top: 0;
