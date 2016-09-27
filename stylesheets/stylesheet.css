@@ -235,6 +235,7 @@ li {
     font-size: 1.75rem; } }
 
 .project-tagline {
+  color: rgb(245, 135, 230);
   margin-bottom: 2rem;
   font-weight: normal;
   opacity: 0.9; }
