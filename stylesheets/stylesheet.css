@@ -11,6 +11,10 @@ body {
   background-image: linear-gradient(180deg, #3FD5C8, #BB26FA);
 }
 
+.project-name, .project-tagline {
+  color: #fff;
+}
+
 .main-content {
   overflow: auto;
   text-align: center;
@@ -147,7 +151,6 @@ li {
       margin-left: 0; } }
 
 .page-header {
-  color: #fff;
   text-align: center;
  }
 
