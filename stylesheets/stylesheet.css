@@ -54,6 +54,11 @@ body {
   top: 37px;
 }
 
+.amoeba-description {
+  font-weight: 500;
+  font-style: italic;
+}
+
 .amoeba-description-container {
   float: left;
   width: 40%;
